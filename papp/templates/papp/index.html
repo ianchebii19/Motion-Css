@@ -1,0 +1,29 @@
+{%extends 'papp/base.html' %}
+{% load static %}
+{% block title %} Home {% endblock title%}
+{% block main%} 
+<main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Better Solutions For Your Business</h1>
+            <p>We are team of talented Software Developers deigning dynamic websites</p>
+            <p>Our experties lies in creating transformative digital solutions to drive business online presence successfully.</p> </p>
+            
+            <div class="d-flex">
+              <a href="{% url 'about' %}" class="btn-get-started">Get Started</a>
+             </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="{% static 'assets/img/hero-img.png' %}" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section>
+</main>
+{% endblock main %}
