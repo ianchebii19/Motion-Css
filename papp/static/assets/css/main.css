@@ -789,11 +789,10 @@ section,
   overflow: clip;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 764px) {
 
-  section,
-  .section {
-    scroll-margin-top: 66px;
+  .logp{
+    width: 400px;
   }
 }
 

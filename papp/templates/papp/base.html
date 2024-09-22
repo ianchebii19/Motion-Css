@@ -10,7 +10,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/favicon.ico' %}" rel="icon">
   <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -44,6 +44,18 @@
     border-radius: 4%;
     padding: 20px
   }
+  #gogo{ 
+    height:99%;
+    width: 95%;
+    border-radius: 2%;
+  }
+  @media (min-width: 764px) { 
+    .logo{ 
+      width: 200px; 
+    } 
+
+  }
+
 </style>
   <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 </head>
@@ -56,7 +68,7 @@
       <a href="{% url 'home' %}" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">CoreTech</h1>
+        <img src="{% static 'assets\img\r.png' %}" alt="logo" class="logo">
       </a>
 
       <nav  id="navmenu" class="navmenu">
@@ -92,7 +104,7 @@
             <p>Bazerh 21 Moi Avenue</p>
             <p>Nairobi</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+254720116927/+254741259140</span></p>
-            <p><strong>Email:</strong> <span>info@cortech.com</span></p>
+            <p><strong>Email:</strong> <span>cortech.developers@gmail.com</span></p>
           </div>
         </div>
 
