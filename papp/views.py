@@ -21,8 +21,6 @@ def service(request):
     return render(request, "papp/service.html")
 def team(request):
     return render(request, "papp/team.html")
-def price(request):
-    return render(request, "papp/price.html")
 
 
 
