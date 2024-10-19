@@ -70,7 +70,7 @@ WSGI_APPLICATION = 'pa.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'coretech',      # Your PostgreSQL database name
@@ -78,6 +78,12 @@ DATABASES = {
         'PASSWORD': '#Pos@2013',  # Your PostgreSQL password
         'HOST': 'localhost',       # Database host, typically 'localhost'
         'PORT': '5432',            # Port for PostgreSQL, typically 5432
+    }
+}"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
